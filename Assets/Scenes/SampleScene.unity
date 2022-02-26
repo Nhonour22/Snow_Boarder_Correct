@@ -169,7 +169,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4338797, y: 1}
+    m_SensorSize: {x: 1.432787, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -186,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153330678}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.484699, y: -1.68, z: -10.02}
+  m_LocalPosition: {x: 10.481968, y: -1.68, z: -10.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 425111769}
   - component: {fileID: 425111773}
   - component: {fileID: 425111774}
+  - component: {fileID: 425111775}
   m_Layer: 0
   m_Name: Cheezus
   m_TagString: Untagged
@@ -226,8 +227,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 8
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -283,6 +284,19 @@ CircleCollider2D:
   m_Offset: {x: 0.46, y: -1.76}
   serializedVersion: 2
   m_Radius: 0.26
+--- !u!114 &425111775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425111768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b6925f24fd741418114e6f86971109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TorqueAmount: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +375,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.484699, y: -1.68, z: -10.02}
+  m_LocalPosition: {x: 10.481968, y: -1.68, z: -10.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -875,7 +889,7 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 10
+  m_Speed: 15
   m_SpeedVariation: 0
   m_ForceScale: 0.1
   m_UseContactForce: 0
